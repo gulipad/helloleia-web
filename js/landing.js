@@ -6,16 +6,15 @@ document.addEventListener('DOMContentLoaded', function () {
   // var intro = document.getElementById('intro');
   // intro.style.marginTop = - intro.offsetHeight / 2 + 'px';
 
-  var pct = 180
   $("body").mousemove(function( event ) {
-    pct += 1
-    var width = $(this).width()
-    var height = $(this).height()
-    var x = event.pageX - width/2
-    var y = event.pageY - height/2
+    var width = $(this).width(),
+        height = $(this).height(),
+        maxDistance = Math.sqrt(width*width + height*height)
+    var x = event.pageX - width/2,
+        y = event.pageY - height/2
     var polarCoord = cart2Polar(x, y)
-    
-    var bg = "linear-gradient(" + (polarCoord.deg - 90) + "deg,#f43b47,#453a94)";
+    var percent = Math.round(polarCoord.d*200/maxDistance)*0.4
+    var bg = "linear-gradient(" + (polarCoord.deg - 90) + "deg,#f43b47 " + (percent) +"%,#453a94 "+ (100-percent)+ "%)";
         $("body").css("background-image", bg);
   });
 
