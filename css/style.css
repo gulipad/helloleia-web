@@ -57,8 +57,10 @@ table {
 
 .heading-subtitle {
   padding: 5px;
-  font-size: large;
-  font-weight: normal;
+  font-size: 24px;
+  font-weight: 300;
+  margin: auto;
+  margin-top: 63px;
 }
 
 .paragraph {
@@ -81,7 +83,8 @@ html, body {
 }
 
 body {
-  background-image: linear-gradient(180deg,#cc208e 0%,#6713d2 100%);
+  background-image: linear-gradient(180deg,white 0%,#ededed 100%);
+
   font-family: 'Roboto', sans-serif;
   color: #fff;
   line-height: 1.3;
@@ -139,6 +142,9 @@ nav ul li .nav-logo{
 /*Navigation bar end*/
 
 .main-container {
+  background-image: -webkit-linear-gradient(#cc208e 0%, #6713d2 100%);
+  background-image: -o-linear-gradient(#cc208e 0%, #6713d2 100%);
+  background-image: linear-gradient(#cc208e 0%, #6713d2 100%);
   width: 100%;
   height: 100%;
   display: flex;
@@ -161,6 +167,7 @@ nav ul li .nav-logo{
        -o-transition: all 0.4s;
           transition: all 0.4s;
   border-radius: 10px;
+  margin: auto
 }
 .btn:hover {
   color: #cc208e;
@@ -267,9 +274,10 @@ nav ul li .nav-logo{
 .what-section__bottom {
   height: 23%;
   width: 100%;
-  background-color: #cc208e;
+  background-color: #cc208e;  
   display: flex;
   color: white;
+  flex-wrap: wrap;
 }
 
 /*What section end*/
@@ -325,9 +333,66 @@ nav ul li .nav-logo{
 /*Bot section ends*/
 
 .why-section__main {
-  height: 50%;
-  background-color: #fefefe;
+  background: -webkit-linear-gradient(#cc208e 30%, #cc208e 100%);
+  background: -o-linear-gradient(#cc208e 30%, #cc208e 100%);
+  background: linear-gradient(#cc208e 30%, #cc208e 100%);
+  height: 80%;
+  width: 100%;
+  display: flex;
 }
+
+.why-section__third-wrapper {
+  margin: auto;
+  height: 100%;
+  width: 85%;
+  background: -webkit-linear-gradient(#cc208e 30%, #cc208e 100%);
+  background: -o-linear-gradient(#cc208e 30%, #cc208e 100%);
+  background: linear-gradient(#cc208e 30%, #cc208e 100%);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.hr-line {
+  background: #6713d2;
+  position: absolute;
+  width: 84%;
+  height: 5px;
+  border-radius: 16px;
+}
+
+.why-section__third {
+  width: 33%;
+  min-width: 270px;
+  display: flex;
+}
+
+.third__box {
+  padding: 30px;
+  height: 360px;
+  width: 280px; 
+  background-color: white;
+  border-radius: 20px;
+  /*box-shadow: 5px 5px 20px #cacaca;*/
+
+}
+
+.box-title {
+  color: #6713d2;
+  font-weight: bold;
+  font-size: 30px;
+}
+.box-content {
+  margin-top: 15px;
+  color: black;
+  font-size: 20px;
+  font-weight: 300;
+}
+.reposition {
+  position: relative;
+  top: -40px;
+}
+
+/*End why section*/
 
 .who-section__main {
   height: 50%;

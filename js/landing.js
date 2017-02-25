@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-  $("body").mousemove(function( event ) {
+  $(".main-container").mousemove(function( event ) {
     var width = $(this).width(),
         height = $(this).height(),
         maxDistance = Math.sqrt(width*width + height*height)
@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var polarCoord = cart2Polar(x, y)
     var percent = Math.round(polarCoord.d*200/maxDistance)*0.4
     var bg = "linear-gradient(" + (polarCoord.deg - 90) + "deg,#cc208e " + (percent) +"%,#6713d2 "+ (100-percent)+ "%)";
-        $("body").css("background-image", bg);
+        $(".main-container").css("background-image", bg);
   });
 
   $('a[href^="#"]').on('click', function(event) {
