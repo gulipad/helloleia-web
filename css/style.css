@@ -46,6 +46,27 @@ table {
   border-spacing: 0;
 }
 
+/*Texts*/
+
+.heading-title {
+  padding: 5px;
+  font-size: xx-large;
+  font-weight: bold;
+  color: #6713d2;
+}
+
+.heading-subtitle {
+  padding: 5px;
+  font-size: large;
+  font-weight: normal;
+}
+
+.paragraph {
+  padding: 5px;
+  font-size: large;
+  font-weight: 300;
+}
+
 /* particleground demo */
 
 * {
@@ -57,11 +78,10 @@ table {
 html, body {
   width: 100%;
   height: 100%;
-  overflow: hidden;
 }
 
 body {
-  background-image: linear-gradient(180deg,#f43b47 0%,#453a94 100%);
+  background-image: linear-gradient(180deg,#cc208e 0%,#6713d2 100%);
   font-family: 'Roboto', sans-serif;
   color: #fff;
   line-height: 1.3;
@@ -69,6 +89,9 @@ body {
 }
 
 /*Navigation bar start*/
+nav {
+  width: 100%
+}
 nav ul{
   margin: auto;
   margin-top: 20px;
@@ -89,17 +112,17 @@ nav ul .nav-btn:hover {
   -o-transition: all 500ms ease;
   transition: all 500ms ease;
   text-align: center;
-  color: #f43b47;
+  color: #cc208e;
   background: white;
   border-radius: 10px
 }
 nav ul li a {
   color: inherit;
   text-decoration: none;
-  font-weight: normal
+  font-weight: normal;
 }
 nav ul li a:hover {
-  color: #f43b47;
+  color: #cc208e;
   text-decoration: none;
   font-weight: normal
 }
@@ -107,11 +130,11 @@ nav ul li {
   text-align: center;
   width: 15%
 }
-.nav-btn {
-  padding: 10px 10px 10px 10px;
-}
 nav ul li .nav-logo{
   width: 100%;
+}
+.nav-btn {
+  padding: 10px 10px 10px 10px;
 }
 /*Navigation bar end*/
 
@@ -119,8 +142,8 @@ nav ul li .nav-logo{
   width: 100%;
   height: 100%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center
 }
 
 .btn {
@@ -137,13 +160,21 @@ nav ul li .nav-logo{
      -moz-transition: all 0.4s;
        -o-transition: all 0.4s;
           transition: all 0.4s;
+  border-radius: 10px;
 }
 .btn:hover {
-  color: #005544;
-  border-color: #005544;
+  color: #cc208e;
+  background-color: white;
 }
 
 .main-container__text-block {
+  margin: auto;
+  margin-top: 45px;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.main-container__button-block {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -159,6 +190,91 @@ nav ul li .nav-logo{
 .text-block__subtitle {
   margin: auto;
   width: 100%;
+}
+
+/*What section begins*/
+
+.what-section__main {
+  height: 100%;
+  background-color: white;
+  display: flex;
+  color: black;
+  flex-wrap: wrap;
+}
+
+.what-section__top {
+  height: 60%;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  color: black;
+}
+.what-section__image-container {
+  position: relative;
+  top: 75px;
+  width: 100%;
+  flex-basis: 50%;
+  display: flex
+}
+
+.what-section__image-container > .outer-border{
+    margin: auto;
+    background-color: #cc208e;
+    border: 30px solid #cc208e;
+    border-radius: 20px;
+}
+
+.what-section__image-container img {
+  border-radius: 20px;
+}
+
+.what-section__text-block {
+  position: relative;
+  top: 50px;
+  padding: 30px 20px 30px 20px;
+  width: 100%;
+  flex-basis: 50%;
+}
+.what-section__bottom {
+  height: 40%;
+  width: 100%;
+  background-color: #cc208e;
+  display: flex;
+  color: black;
+}
+
+/*What section end*/
+
+.why-section__main {
+  height: 50%;
+  background-color: #fefefe;
+}
+
+.who-section__main {
+  height: 50%;
+  background-color: white;
+}
+/*Typed.js blinking cursor*/
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
 }
 
 /*@media only screen and (max-width: 1000px) {

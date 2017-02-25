@@ -1,11 +1,4 @@
 document.addEventListener('DOMContentLoaded', function () {
-  // particleground(document.getElementById('particles'), {
-  //   dotColor: '#ffffff',
-  //   lineColor: '#ffffff',
-  // });
-  // var intro = document.getElementById('intro');
-  // intro.style.marginTop = - intro.offsetHeight / 2 + 'px';
-
   $("body").mousemove(function( event ) {
     var width = $(this).width(),
         height = $(this).height(),
@@ -14,9 +7,27 @@ document.addEventListener('DOMContentLoaded', function () {
         y = event.pageY - height/2
     var polarCoord = cart2Polar(x, y)
     var percent = Math.round(polarCoord.d*200/maxDistance)*0.4
-    var bg = "linear-gradient(" + (polarCoord.deg - 90) + "deg,#f43b47 " + (percent) +"%,#453a94 "+ (100-percent)+ "%)";
+    var bg = "linear-gradient(" + (polarCoord.deg - 90) + "deg,#cc208e " + (percent) +"%,#6713d2 "+ (100-percent)+ "%)";
         $("body").css("background-image", bg);
   });
+
+  $('a[href^="#"]').on('click', function(event) {
+      var target = $(this.getAttribute('href'));
+      if( target.length ) {
+          event.preventDefault();
+          $('html, body').stop().animate({
+              scrollTop: target.offset().top
+          }, 700);
+      }
+  });
+
+  $(function(){
+        $(".element").typed({
+            strings: ["interacción.^500", "magia.^500", "inteligencia artificial.^500", "Infinit AI.^4000"],
+            typeSpeed: 50,
+            loop: true,
+        });
+    });
 
 }, false);
 
