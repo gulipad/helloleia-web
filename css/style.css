@@ -254,7 +254,7 @@ nav ul li .nav-logo{
     margin: auto;
     position: absolute;
     bottom: -25px;
-    right: 50px;
+    right: 20%;
     background-color: #cc208e;
     border: 20px solid #cc208e;
     border-radius: 30px;
@@ -272,7 +272,7 @@ nav ul li .nav-logo{
   position: absolute;
   bottom: 80px;
   padding: 30px 25px 30px 20px;
-  width: 100%;
+  width: 80%;
   display: flex;
   flex-direction: column;
 }
