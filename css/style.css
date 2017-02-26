@@ -210,7 +210,7 @@ nav ul li .nav-logo{
 
 .text-block__title {
   margin: auto;
-  width: 100%;
+    width: 100%;
 }
 
 .text-block__subtitle {
@@ -222,7 +222,7 @@ nav ul li .nav-logo{
 
 .what-section__main {
   height: 80%;
-  min-height: 538px;
+  min-height: 560px;
   background-color: white;
   display: flex;
   color: black;
@@ -245,7 +245,6 @@ nav ul li .nav-logo{
 }
 .what-section__image-container {
   position: relative;
-  bottom: -68px;
   width: 100%;
   flex-basis: 50%;
   display: flex
@@ -253,6 +252,9 @@ nav ul li .nav-logo{
 
 .what-section__image-container > .outer-border{
     margin: auto;
+    position: absolute;
+    bottom: -25px;
+    right: 50px;
     background-color: #cc208e;
     border: 20px solid #cc208e;
     border-radius: 30px;
@@ -261,13 +263,16 @@ nav ul li .nav-logo{
 .what-section__image-container img {
   border-radius: 20px;
 }
-
-.what-section__text-block {
+.what-section__text-fix {
   position: relative;
-  top: 90px;
-  padding: 30px 20px 30px 20px;
   width: 100%;
   flex-basis: 50%;
+}
+.what-section__text-block {
+  position: absolute;
+  bottom: 80px;
+  padding: 30px 25px 30px 20px;
+  width: 100%;
   display: flex;
   flex-direction: column;
 }
