@@ -251,6 +251,7 @@ nav ul li .nav-logo{
     display: flex;
     color: black;
     flex-wrap: wrap;
+    min-height: 524px;
   }
   .what-section__image-container {
       margin: auto;
