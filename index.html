@@ -99,8 +99,8 @@
     </div>
 
     <div class="bot-section__main">
-      <a id="bot" class="smooth"></a>
       <div class="bot-section__top">
+        <a id="bot" class="smooth"></a>
         <div class="bot-section__image-container">
           <img src="./public/images/kittybus_code.png" height="400" alt="demo">
         </div>
@@ -111,8 +111,22 @@
           <a href="https://m.me/kittybusmadrid" class="btn-dark meet-kittybus__button" target="_blank">HABLA CONMIGO!</a>
         </div>
       </div>
-      <div class="bot-section__bottom">  
+      <div class="bot-section__bottom">
+        <div class="bottom__title" >
+        <h2 class="heading-subtitle">Nos encanta saber de ti.</h2>
+      </div>
       </div>
     </div>
+    <footer class= "section-bottom">
+      <form id="contact-form" class="contact-form" action="https://formspree.io/helloleiaai@gmail.com"
+            method="POST">
+          <input class="contact-form__field" type="text" name="name" placeholder="Nombre" required="true">
+          <input class="contact-form__field" type="email" name="_replyto" placeholder="Email" required="true">
+          <textarea form="contact-form" maxlength="500" style="width: 100%" class="contact-form__field" type="textarea" name="_message" placeholder="Mensaje" required="true"></textarea>
+          <input class="contact-form__btn" type="submit" value="Enviar">
+          <input type="text" name="_gotcha" style="display:none" />
+      </form>
+      <div class="social-and-more"></div>
+    </footer>
   </body>    
 </html>

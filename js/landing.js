@@ -26,6 +26,10 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   })
 
+  $('#contact-form').on('submit', function (e) {
+    console.log(e.target)
+  })
+
 }, false);
 
 function cart2Polar(x, y){
