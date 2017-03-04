@@ -215,6 +215,9 @@ nav ul li .nav-logo{
     position:relative; 
     bottom:100vh;
   }
+  .btn-mobile-screen {
+    display: none;
+  }
   .btn {
     padding: 15px 30px;
     border: 2px solid #fff;
@@ -478,6 +481,9 @@ nav ul li .nav-logo{
 }
 
 @media screen and (max-width: 767px) {
+  .btn-full-screen {
+    display: none;
+  }
   nav ul {
     margin-top: 60px;
   }
