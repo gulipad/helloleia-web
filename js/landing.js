@@ -1,15 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
-  $(".main-container").mousemove(function( event ) {
-    var width = $(this).width(),
-        height = $(this).height(),
-        maxDistance = Math.sqrt(width*width + height*height)
-    var x = event.pageX - width/2,
-        y = event.pageY - height/2
-    var polarCoord = cart2Polar(x, y)
-    var percent = Math.round(polarCoord.d*200/maxDistance)*0.4
-    var bg = "linear-gradient(" + (polarCoord.deg - 90) + "deg,#cc208e " + (percent) +"%,#6713d2 "+ (100-percent)+ "%)";
-        $(".main-container").css("background-image", bg);
-  });
+
+  $('.main-container').biutifulGradient({color1: '#cc208e',color2: '#6713d2',angleDeg: '180'})
 
   $('a[href^="#"]').on('click', function(event) {
       var target = $(this.getAttribute('href'));
@@ -26,8 +17,12 @@ document.addEventListener('DOMContentLoaded', function () {
             strings: ["interacción.^500", "magia.^500", "inteligencia artificial.^500", "Infinit AI.^4000"],
             typeSpeed: 50,
             loop: true,
-        });
-    });
+        })
+    })
+
+  $(function(){
+    $('#mobile-menu').slicknav();
+  })
 
 }, false);
 
