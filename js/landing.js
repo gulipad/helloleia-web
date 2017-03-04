@@ -21,7 +21,9 @@ document.addEventListener('DOMContentLoaded', function () {
     })
 
   $(function(){
-    $('#mobile-menu').slicknav();
+    $('#mobile-menu').slicknav({
+      prependTo: '.main-container', 
+    });
   })
 
 }, false);
