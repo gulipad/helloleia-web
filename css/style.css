@@ -492,7 +492,7 @@ nav ul li .nav-logo{
     bottom: 96.5%;
   }
   .nav-logo {
-    width: 25%;
+    width: 35%;
   }
 
   .nav-btn {
@@ -585,10 +585,6 @@ nav ul li .nav-logo{
   
   .js .slicknav_menu {
     display:block;
-  }
-
-  .empty-space {
-
   }
 
   .what-section__main {

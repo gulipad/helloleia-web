@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   $(function(){
         $(".element").typed({
-            strings: ["interacción.^500", "magia.^500", "inteligencia artificial.^500", "Infinit AI.^4000"],
+            strings: ["interacción.^500", "magia.^500", "inteligencia artificial.^500", "Leia AI.^4000"],
             typeSpeed: 50,
             loop: true,
         })
