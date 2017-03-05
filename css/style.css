@@ -278,6 +278,7 @@ nav ul li .nav-logo{
     padding: 5px;
     font-size: large;
     font-weight: 300;
+    margin:  auto;
   }
   body {
     min-width: 1015px;
@@ -481,6 +482,7 @@ nav ul li .nav-logo{
     display: flex;
     color: white;
     flex-wrap: wrap;
+    min-height: 270px;
   }
 
   .bottom__title {
@@ -506,8 +508,15 @@ nav ul li .nav-logo{
     border: 2px solid white;
     background: #cc208e;
     padding: 10px;
-    margin: 0 0 20px 10px;
+    margin: 0 0 20px 0;
     width: 48.3%;
+  }
+  .field-left {
+    margin-right: 1.5%;
+  }
+
+  .field-right {
+    margin-left: 1.5%; 
   }
   .contact-form__field::-webkit-input-placeholder, .contact-form__btn {
     color: white;
@@ -616,6 +625,7 @@ nav ul li .nav-logo{
     padding: 5px;
     font-size: large;
     font-weight: 300;
+    margin: auto;
   }
   .main-container {
     width: 100%;
@@ -851,44 +861,4 @@ nav ul li .nav-logo{
   /*Bot section ends*/
 }
 
-/*@media only screen and (max-width: 1000px) {
-  h1 {
-    font-size: 70px;
-  }
-}
 
-@media only screen and (max-width: 800px) {
-  h1 {
-    font-size: 48px;
-  }
-  h1::after {
-    height: 8px;
-  }
-}
-
-@media only screen and (max-width: 568px) {
-  #intro {
-    padding: 0 10px;
-  }
-  h1 {
-    font-size: 30px;
-  }
-  h1::after {
-    height: 6px;
-  }
-  p {
-    font-size: 18px;
-  }
-  .btn {
-    font-size: 16px;
-  }
-}
-
-@media only screen and (max-width: 320px) {
-  h1 {
-    font-size: 28px;
-  }
-  h1::after {
-    height: 4px;
-  }
-}
