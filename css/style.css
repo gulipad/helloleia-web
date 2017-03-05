@@ -529,10 +529,20 @@ nav ul li .nav-logo{
   
   .contact-form__btn {
     padding: 10px;
+    font-weight: bold;
     background: #cc208e;
     border: 2px solid white;
     border-radius: 10px;
     width: 150px;
+  }
+   .contact-form__btn:hover {
+    background: white;
+    color: #cc208e;
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
   }
 
   .social-and-more {
