@@ -216,6 +216,10 @@ nav ul li .nav-logo{
   .btn-mobile-screen {
     display: none;
   }
+  a.btn.btn-kittybus {
+    width: 250px;
+    text-align: center;
+  }
   .btn {
     padding: 15px 30px;
     border: 2px solid #fff;
@@ -268,6 +272,7 @@ nav ul li .nav-logo{
   }
 
   .heading-subtitle {
+    text-align: center;
     padding: 5px;
     font-size: 24px;
     font-weight: 300;
@@ -534,6 +539,8 @@ nav ul li .nav-logo{
     border: 2px solid white;
     border-radius: 10px;
     width: 150px;
+    color: white;
+
   }
    .contact-form__btn:hover {
     background: white;
@@ -547,6 +554,9 @@ nav ul li .nav-logo{
 
   .social-and-more {
     width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
   }
   
 }
@@ -587,8 +597,10 @@ nav ul li .nav-logo{
     margin: auto
   }
   .btn-kittybus {
+    width: 250px;
     margin: 30px auto 40px auto
   }
+
   .btn:hover {
     color: #cc208e;
     background-color: white;
@@ -815,7 +827,6 @@ nav ul li .nav-logo{
     color: white;
   }
   .section-bottom {
-    height: 40%;
     width: 100%;
     background-color: #cc208e;
     display: flex;
@@ -862,10 +873,14 @@ nav ul li .nav-logo{
     border: 2px solid white;
     border-radius: 10px;
     width: 150px;
+    color: white;
   }
 
   .social-and-more {
     width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
   }
 
   /*Bot section ends*/

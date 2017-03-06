@@ -10,10 +10,12 @@
 
     	var bg = "linear-gradient(" + settings.angleDeg + "deg, " + settings.color1 + " 0" + "%, " + settings.color2 + " 100%)",
     		bgO =  "-o-linear-gradient(" + settings.angleDeg + "deg, " + settings.color1 + " 0" + "%, " + settings.color2 + " 100%)",
-    		bgWebkit =  "-webkit-linear-gradient(" + settings.angleDeg + "deg, " + settings.color1 + " 0" + "%, " + settings.color2 + " 100%)"
+        bgWebkit =  "-webkit-linear-gradient(" + settings.angleDeg + "deg, " + settings.color1 + " 0" + "%, " + settings.color2 + " 100%)",
+    		bgMoz =  "linear-gradient(" + settings.angleDeg + "deg, " + settings.color1 + " 0" + "%, " + settings.color2 + " 100%)"
 
    		this.css("background-image", bg)
-   		this.css("background-image", bgO)
+      this.css("background-image", bgO)
+   		this.css("background", bgMoz)
    		this.css("background-image", bgWebkit)
 
    		this.on('mousemove', function () { // Set background on move
@@ -25,9 +27,13 @@
 		    var polarCoord = cart2Polar(x, y)
 		    var percent = Math.round(polarCoord.d*200/maxDistance)*0.4
 		    var bg = "linear-gradient(" + (polarCoord.deg - 90) + "deg," + settings.color1 + " " + (percent) +"%, " + settings.color2 + " " + (100-percent)+ "%)"
-		    var bgO = "-o-linear-gradient(" + (polarCoord.deg - 90) + "deg," + settings.color1 + " " + (percent) +"%, " + settings.color2 + " " + (100-percent)+ "%)"
+        var bgO = "-o-linear-gradient(" + (polarCoord.deg - 90) + "deg," + settings.color1 + " " + (percent) +"%, " + settings.color2 + " " + (100-percent)+ "%)"
+		    var bgMoz = "linear-gradient(" + (polarCoord.deg - 90) + "deg," + settings.color1 + " " + (percent) +"%, " + settings.color2 + " " + (100-percent)+ "%)"
 		    var bgWebkit = "-webkit-linear-gradient(" + (polarCoord.deg - 90) + "deg," + settings.color1 + " " + (percent) +"%, " + settings.color2 + " " + (100-percent)+ "%)"
-		    $(this).css("background-image", bg);
+        $(this).css("background-image", bg);
+        $(this).css("background-image", bgO);
+        $(this).css("background-image", bgWebkit);
+		    $(this).css("background", bgMoz);
    		})
         return this;
  
