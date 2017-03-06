@@ -517,11 +517,11 @@ nav ul li .nav-logo{
     width: 48.3%;
   }
   .field-left {
-    margin-right: 1.5%;
+    margin-right: 1.7%;
   }
 
   .field-right {
-    margin-left: 1.5%; 
+    margin-left: 1.7%; 
   }
   .contact-form__field::-webkit-input-placeholder, .contact-form__btn {
     color: white;
