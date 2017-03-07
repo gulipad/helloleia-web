@@ -201,13 +201,6 @@ nav ul li .nav-logo{
   background-color: #6713d2;
 }
 
-  #mobile-menu {
-    display: none;
-  }
-  .slicknav_menu {
-    display:none;
-  }
-
 @media screen and (min-width: 768px) {
   .start-anchor {
     position:relative; 
@@ -306,18 +299,6 @@ nav ul li .nav-logo{
   .main-container__button-block {
     display: flex;
     width: 100%;
-  }
-  /* #menu is the original menu */
-  .js #mobile-menu {
-    display:none;
-  }
-  
-  .js .slicknav_menu {
-    display:block;
-  }
-
-  .empty-space {
-
   }
 
   .what-section__main {
