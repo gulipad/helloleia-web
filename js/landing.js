@@ -21,11 +21,3 @@ document.addEventListener('DOMContentLoaded', function () {
     })
 
 }, false);
-
-function cart2Polar(x, y){
-    distance = Math.sqrt(x*x + y*y)
-    radians = Math.atan2(y,x) //This takes y first
-    degrees = radians * 360 / (2*Math.PI)
-    polarCoord = { d:distance, rad:radians, deg: degrees }
-    return polarCoord
-}
