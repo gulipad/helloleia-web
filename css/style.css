@@ -210,7 +210,6 @@ nav ul li .nav-logo{
     display: none;
   }
   a.btn.btn-kittybus {
-    width: 250px;
     text-align: center;
   }
   .btn {
@@ -410,7 +409,6 @@ nav ul li .nav-logo{
   /*Bot section start*/
 
   .bot-section__main {
-    height: 100%;
     min-height: 600px;
     background-color: white;
     display: flex;
@@ -418,11 +416,17 @@ nav ul li .nav-logo{
     flex-wrap: wrap;
   }
 
-  .bot-section__top {
-    height: 80%;
+  .bot-section__single-bot {
     width: 100%;
     background-color: white;
     display: flex;
+  }
+  .bot-section__single-bot.fray-perico__bot {
+    padding: 40px 20px 40px 50px;
+  }
+  .bot-section__single-bot.kittybus-madrid__bot {
+    padding: 40px 50px 40px 20px;
+    background-color: whitesmoke;
   }
   .bot-section__image-container {
     width: 100%;
@@ -449,8 +453,7 @@ nav ul li .nav-logo{
     margin: auto;
   }
 
-  .bot-section__bottom {
-    height: 20%;
+  .pre-footer {
     width: 100%;
     background-color: #cc208e;
     display: flex;
@@ -461,7 +464,6 @@ nav ul li .nav-logo{
   /*Bot section ends*/
 
   .section-bottom {
-    height: 40%;
     width: 100%;
     background-color: #cc208e;
     display: flex;
@@ -577,7 +579,6 @@ nav ul li .nav-logo{
     margin: auto
   }
   .btn-kittybus {
-    width: 250px;
     margin: 30px auto 40px auto
   }
 
@@ -767,10 +768,17 @@ nav ul li .nav-logo{
     flex-wrap: wrap;
   }
 
-  .bot-section__top {
+  .bot-section__single-bot {
     background-color: white;
     display: flex;
     flex-wrap: wrap;
+  }
+  .bot-section__single-bot.fray-perico__bot {
+    padding: 40px 20px 40px 50px;
+  }
+  .bot-section__single-bot.kittybus-madrid__bot {
+    padding: 40px 50px 40px 20px;
+    background-color: whitesmoke;
   }
   .bot-section__image-container {
     width: 100%;
@@ -798,7 +806,7 @@ nav ul li .nav-logo{
     flex-direction: column;
     margin: auto;
   }
-  .bot-section__bottom {
+  .pre-footer {
     height: 20%;
     width: 100%;
     background-color: #cc208e;
